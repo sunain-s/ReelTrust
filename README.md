@@ -23,6 +23,7 @@ This project was developed during HackLondon 2026 and won “Best Use of Presage
 - [API Contract](#api-contract)
 - [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
+- [Notes](#notes)
 - [Contributors](#contributors)
 
 
