@@ -144,7 +144,8 @@ ReelTrust/
 From WSL:
 
 ```bash
-cd /home/<your-user>/Projects/ReelTrust/backend
+git clone <your-reeltrust-repo-url>
+cd ReelTrust/backend
 npm install
 ```
 
@@ -191,7 +192,7 @@ Expected:
 ### 1) Start backend in WSL
 
 ```bash
-cd /home/<your-user>/Projects/ReelTrust/backend
+cd ReelTrust/backend
 npm run start
 ```
 
@@ -296,7 +297,7 @@ This E2E suite validates:
 Run from backend folder:
 
 ```bash
-cd /home/<your-user>/Projects/ReelTrust/backend
+cd ReelTrust/backend
 npm run test:api
 ```
 
