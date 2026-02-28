@@ -138,6 +138,18 @@ ReelTrust/
 - USB debugging enabled on device
 - Android Platform Tools (`adb`) installed and available
 
+### Android Presage API key (required)
+
+Add your Presage key to `android/local.properties`:
+
+```properties
+PRESAGE_API_KEY=<your_presage_api_key>
+```
+
+Notes:
+- Use the exact key name `PRESAGE_API_KEY` (this is what `android/app/build.gradle.kts` reads).
+- Keep `local.properties` local to your machine; do not commit your real API key.
+
 
 
 ## Backend Setup (WSL)
@@ -313,6 +325,15 @@ npm run test:api
 - Check backend logs for explicit JSON error (`413`, invalid JSON, aborted request)
 - Increase `REQUEST_BODY_LIMIT` if needed
 - Ensure app sends expected JSON contract for `/api/v1/videos/submit`
+
+### Android shows missing API key / SDK init error
+
+- Ensure `android/local.properties` contains:
+
+```properties
+PRESAGE_API_KEY=<your_presage_api_key>
+```
+- Re-sync Gradle and rebuild the app.
 
 ### Solana failures (`502`)
 
